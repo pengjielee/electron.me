@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>electron vue starter</title>
+    <link href="./style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="app">
+      <nav class="nav">
+        <router-link to="/">home</router-link>
+        <router-link to="/about">about</router-link>
+      </nav>
+
+      <router-view></router-view>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+    <script src="https://unpkg.com/vue-router@3.4.3/dist/vue-router.min.js"></script>
+    <script src="./renderer.js"></script>
+  </body>
+</html>

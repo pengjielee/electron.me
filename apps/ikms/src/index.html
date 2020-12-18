@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>我的知识库</title>
+    <link rel="stylesheet" id="theme" href="assets/themes/default.css" />
+    <link rel="stylesheet" href="assets/codemirror/codemirror.css" />
+    <link rel="stylesheet" href="assets/purecss/pure.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.2/build/styles/default.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <p class="hidden">{{ message }}</p>
+
+      <div class="page-header">
+        <router-link to="/url/list"
+          ><el-link type="primary">URL</el-link></router-link
+        >
+        <router-link to="/code/list"
+          ><el-link type="primary">CODE</el-link></router-link
+        >
+        <router-link to="/note/list"
+          ><el-link type="primary">NOTE</el-link></router-link
+        >
+        <router-link to="/formatter"
+          ><el-link type="primary">FORMATTER</el-link></router-link
+        >
+        <router-link to="/setting"
+          ><el-link type="primary">SETTING</el-link></router-link
+        >
+      </div>
+
+      <router-view></router-view>
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="https://unpkg.com/vue-router@3.4.3/dist/vue-router.min.js"></script>
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script type="text/javascript" src="assets/codemirror/codemirror.js"></script>
+  <script type="text/javascript">
+    const hljs = require("highlight.js");
+    Vue.use(hljs.vuePlugin);
+  </script>
+  <script type="text/javascript" src="renderer.js"></script>
+</html>

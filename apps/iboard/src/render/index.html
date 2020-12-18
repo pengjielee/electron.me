@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>我的粘贴板</title>
+        <link rel="stylesheet" href="../../assets/datepicker/datepicker.min.css" />
+        <link rel="stylesheet" href="../../assets/purecss/pure.min.css" />
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="page page-notes">
+            <div class="page-header">
+                <div class="card-search">
+                    <div class="form-group">
+                        <div class="form-input-group">
+                            <input
+                                type="text"
+                                placeholder="请输入关键字"
+                                class="form-input form-keyword"
+                                id="js-search-keyword"
+                            />
+                            <input
+                                type="text"
+                                placeholder="请选择日期"
+                                readonly="readonly"
+                                class="form-input form-date"
+                                id="js-search-date"
+                            />
+                        </div>
+                        <div class="form-action group">
+                            <button class="pure-button pure-button-primary btn-search" id="js-search-btn">搜索</button>
+                            <button class="pure-button btn-reset" id="js-search-reset">重置</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-input form-select" id="js-export-select">
+                            <option value="" disabled selected>请选择导出格式</option>
+                            <option value="json">JSON</option>
+                            <option value="txt">TEXT</option>
+                        </select>
+                        <div class="form-action">
+                            <button class="pure-button btn-export" id="js-export-btn">导出</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-body">
+                <ul id="js-notes" class="note-list"></ul>
+                <div id="js-search-result" class="search-result"></div>
+            </div>
+            <div class="page-footer">
+                <div id="js-pagebar" class="pagebar">
+                    <button class="pure-button pure-button-primary btn-page" data-tag="first">首页</button>
+                    <button class="pure-button pure-button-primary btn-page" data-tag="prev">上一页</button>
+                    <button class="pure-button pure-button-primary btn-page" data-tag="next">下一页</button>
+                    <button class="pure-button pure-button-primary btn-page" data-tag="last">尾页</button>
+                    <span id="js-pagebar-status"></span>
+                </div>
+            </div>
+            <div class="controls" id="js-help">帮助</div>
+        </div>
+    </body>
+    <script>
+        const $ = require('jquery');
+        window.jQuery = $;
+    </script>
+    <script type="text/javascript" src="../../assets/datepicker/datepicker.min.js"></script>
+    <script type="text/javascript" src="../../assets/datepicker/i18n/datepicker.zh.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</html>

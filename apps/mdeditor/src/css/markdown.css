@@ -1,0 +1,233 @@
+/* Extracted and interpreted from adcstyle.css and frameset_styles.css */
+
+/* body */
+/*body {
+  margin: 20px auto;
+    width: 800px;
+  background-color: #fff;
+  color: #000;
+  font: 13px "Myriad Pro", "Lucida Grande", Lucida, Verdana, sans-serif;
+}*/
+
+/* links */
+.markdown a:link {
+    color: #00f;
+    text-decoration: none;
+}
+
+.markdown a:visited {
+    color: #00a;
+    text-decoration: none;
+}
+
+.markdown a:hover {
+    color: #f60;
+    text-decoration: underline;
+}
+
+.markdown a:active {
+    color: #f60;
+    text-decoration: underline;
+}
+
+/* html tags */
+
+/*  Work around IE/Win code size bug - courtesy Jesper, waffle.wootest.net  */
+
+* html code {
+    font-size: 101%;
+}
+
+* html pre {
+    font-size: 101%;
+}
+
+/* code */
+
+.markdown pre,
+.markdown code {
+    font-size: 11px;
+    font-family: monaco, courier, consolas, monospace;
+}
+
+.markdown pre {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #c7cfd5;
+    background: #f1f5f9;
+    margin: 20px 0;
+    padding: 8px;
+    text-align: left;
+}
+
+.markdown hr {
+    color: #919699;
+    size: 1;
+    width: 100%;
+    noshade: 'noshade';
+    margin: 25px 0;
+}
+
+/* headers */
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-family: 'Myriad Pro', 'Lucida Grande', Lucida, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.markdown h1 {
+    margin-top: 1em;
+    margin-bottom: 25px;
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+.markdown h2 {
+    /*margin-top: 2.5em;*/
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 2px;
+}
+.markdown h3 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 17px;
+    color: #000;
+}
+.markdown h4 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    font-size: 15px;
+    color: #000;
+}
+.markdown h5 {
+    margin-top: 20px;
+    margin-bottom: 0.5em;
+    padding: 0;
+    font-size: 13px;
+    color: #000;
+}
+
+.markdown h6 {
+    margin-top: 20px;
+    margin-bottom: 0.5em;
+    padding: 0;
+    font-size: 11px;
+    color: #000;
+}
+
+.markdown p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+/* lists */
+
+.markdown ul {
+    list-style: square outside;
+    margin: 0 0 0 15px;
+    padding: 0 0 12px 6px;
+}
+
+.markdown li {
+    margin-top: 7px;
+    margin-left: 5px !important;
+}
+
+.markdown ol {
+    list-style-type: decimal;
+    list-style-position: outside;
+    margin: 0 0 0 30px;
+    padding: 0 0 12px 6px;
+}
+
+.markdown ol ol {
+    list-style-type: lower-alpha;
+    list-style-position: outside;
+    margin: 7px 0 0 30px;
+    padding: 0 0 0 10px;
+}
+
+.markdown ul ul {
+    margin-left: 40px;
+    padding: 0 0 0 6px;
+}
+
+.markdown li > p {
+    display: inline;
+}
+.markdown li > p + p {
+    display: block;
+}
+.markdown li > a + p {
+    display: block;
+}
+
+/* table */
+
+.markdown table {
+    width: 100%;
+    border-top: 1px solid #919699;
+    border-left: 1px solid #919699;
+    border-spacing: 0;
+}
+
+.markdown table th {
+    padding: 4px 8px 4px 8px;
+    background: #e2e2e2;
+    font-size: 12px;
+    border-bottom: 1px solid #919699;
+    border-right: 1px solid #919699;
+}
+.markdown table th p {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.markdown table td {
+    padding: 8px;
+    font-size: 12px;
+    vertical-align: top;
+    border-bottom: 1px solid #919699;
+    border-right: 1px solid #919699;
+}
+.markdown table td p {
+    margin-bottom: 0px;
+}
+.markdown table td p + p {
+    margin-top: 5px;
+}
+.markdown table td p + p + p {
+    margin-top: 5px;
+}
+
+/* forms */
+
+.markdown form {
+    margin: 0;
+}
+
+.markdown button {
+    margin: 3px 0 10px 0;
+}
+.markdown input {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+
+.markdown select {
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0 3px 0;
+}
+
+.markdown textarea {
+    margin: 0 0 10px 0;
+    width: 100%;
+}

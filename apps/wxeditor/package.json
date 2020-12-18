@@ -1,0 +1,38 @@
+{
+  "name": "wxeditor",
+  "author": "pengjielee",
+  "description": "微信文章转换器",
+  "version": "1.0.2",
+  "main": "src/main.js",
+  "license": "MIT",
+  "build": {
+    "appId": "com.shijiebang.app",
+    "mac": {
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "zip"
+      ]
+    }
+  },
+  "scripts": {
+    "start": "export NODE_ENV=development && electron . ",
+    "start:win": "set NODE_ENV=development&&electron . ",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "pell": "^1.0.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "electron": "^3.0.10",
+    "electron-builder": "^20.38.2"
+  }
+}

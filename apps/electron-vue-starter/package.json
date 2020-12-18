@@ -1,0 +1,21 @@
+{
+  "name": "electron-vue-starter",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "pengjielee",
+  "devDependencies": {
+    "electron": "^11.0.3"
+  }
+}
