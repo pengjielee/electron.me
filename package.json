@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "prettier:check": "prettier --check apps/**/src/",
-    "prettier:write": "prettier --write apps/**/src/"
+    "prettier:write": "prettier --write apps/**/src/",
+    "clean": "lerna clean",
+    "init": "lerna bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
