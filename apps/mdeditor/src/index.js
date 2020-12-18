@@ -2,16 +2,16 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 
 ipcMain.on('open-directory-dialog', event => {
-    dialog
-        .showOpenDialog({
-            title: '选择保存目录',
-            properties: ['openDirectory'],
-        })
-        .then(function (res) {
-            if (res.filePaths) {
-                event.reply('select-directory', res.filePaths[0]);
-            }
-        });
+  dialog
+    .showOpenDialog({
+      title: '选择保存目录',
+      properties: ['openDirectory'],
+    })
+    .then(function (res) {
+      if (res.filePaths) {
+        event.reply('select-directory', res.filePaths[0]);
+      }
+    });
 });
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -19,30 +19,30 @@ ipcMain.on('open-directory-dialog', event => {
 let win;
 
 function createWindow() {
-    // Create the browser window.
-    win = new BrowserWindow({
-        width: 800,
-        height: 600,
-        webPreferences: {
-            nodeIntegration: true,
-        },
-    });
+  // Create the browser window.
+  win = new BrowserWindow({
+    width: 800,
+    height: 600,
+    webPreferences: {
+      nodeIntegration: true,
+    },
+  });
 
-    // and load the index.html of the app.
-    win.loadFile(path.join(__dirname, 'index.html'));
+  // and load the index.html of the app.
+  win.loadFile(path.join(__dirname, 'index.html'));
 
-    if (process.env.NODE_ENV === 'development') {
-        // Open the DevTools.
-        win.webContents.openDevTools();
-    }
+  if (process.env.NODE_ENV === 'development') {
+    // Open the DevTools.
+    win.webContents.openDevTools();
+  }
 
-    // Emitted when the window is closed.
-    win.on('closed', () => {
-        // Dereference the window object, usually you would store windows
-        // in an array if your app supports multi windows, this is the time
-        // when you should delete the corresponding element.
-        win = null;
-    });
+  // Emitted when the window is closed.
+  win.on('closed', () => {
+    // Dereference the window object, usually you would store windows
+    // in an array if your app supports multi windows, this is the time
+    // when you should delete the corresponding element.
+    win = null;
+  });
 }
 
 // This method will be called when Electron has finished
@@ -52,19 +52,19 @@ app.on('ready', createWindow);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
-    // On macOS it is common for applications and their menu bar
-    // to stay active until the user quits explicitly with Cmd + Q
-    if (process.platform !== 'darwin') {
-        app.quit();
-    }
+  // On macOS it is common for applications and their menu bar
+  // to stay active until the user quits explicitly with Cmd + Q
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
 });
 
 app.on('activate', () => {
-    // On macOS it's common to re-create a window in the app when the
-    // dock icon is clicked and there are no other windows open.
-    if (win === null) {
-        createWindow();
-    }
+  // On macOS it's common to re-create a window in the app when the
+  // dock icon is clicked and there are no other windows open.
+  if (win === null) {
+    createWindow();
+  }
 });
 
 // In this file you can include the rest of your app's specific main process

@@ -1,76 +1,76 @@
 <title>我的粘贴板</title>
 <style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        margin: auto;
-    }
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    .page-help {
-        line-height: 30px;
-        padding: 20px;
-    }
-    .page-help .card {
-        margin-bottom: 15px;
-    }
-    .page-help .title {
-        font-size: 16px;
-        font-weight: 500;
-    }
-    .page-help .content {
-        font-size: 14px;
-    }
-    .page-help .close {
-        color: white;
-        opacity: 0.7;
-        position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 14px;
-        text-decoration: none;
-        color: #333;
-    }
-    .card-action {
-        text-align: center;
-    }
-    .controls {
-        position: fixed;
-        right: 0px;
-        bottom: 10px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        border-radius: 50%;
-        background: #eee;
-        font-size: 12px;
-        font-weight: bold;
-        cursor: pointer;
-        text-decoration: none;
-        color: #333;
-    }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: auto;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .page-help {
+    line-height: 30px;
+    padding: 20px;
+  }
+  .page-help .card {
+    margin-bottom: 15px;
+  }
+  .page-help .title {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .page-help .content {
+    font-size: 14px;
+  }
+  .page-help .close {
+    color: white;
+    opacity: 0.7;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+  }
+  .card-action {
+    text-align: center;
+  }
+  .controls {
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: #eee;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+  }
 </style>
 <div class="page page-help">
-    <div class="card card-about">
-        <h1 class="title">我的粘贴板</h1>
-        <p class="content">主要实现把系统剪贴板中的内容持久存储。</p>
-    </div>
-    <div class="card card-help">
-        <h1 class="title">使用方法</h1>
-        <p class="content">1. 按Command + C 复制到系统粘贴板；</p>
-        <p class="content">2. 按Command + Option + S 保存到我的粘贴板；</p>
-    </div>
-    <div class="card card-implate">
-        <h1 class="title">实现功能</h1>
-        <p class="content">1. 支持按日期筛选；</p>
-        <p class="content">2. 支持按日期/页码导出；</p>
-        <p class="content">3. 支持导出txt/json文件；</p>
-    </div>
-    <div class="card-action">
-        <a class="controls" href="javascript:window.close()">关闭</a>
-    </div>
+  <div class="card card-about">
+    <h1 class="title">我的粘贴板</h1>
+    <p class="content">主要实现把系统剪贴板中的内容持久存储。</p>
+  </div>
+  <div class="card card-help">
+    <h1 class="title">使用方法</h1>
+    <p class="content">1. 按Command + C 复制到系统粘贴板；</p>
+    <p class="content">2. 按Command + Option + S 保存到我的粘贴板；</p>
+  </div>
+  <div class="card card-implate">
+    <h1 class="title">实现功能</h1>
+    <p class="content">1. 支持按日期筛选；</p>
+    <p class="content">2. 支持按日期/页码导出；</p>
+    <p class="content">3. 支持导出txt/json文件；</p>
+  </div>
+  <div class="card-action">
+    <a class="controls" href="javascript:window.close()">关闭</a>
+  </div>
 </div>

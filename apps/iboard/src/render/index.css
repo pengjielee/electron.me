@@ -1,252 +1,252 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  margin: auto;
 }
 
 ul li {
-    list-style-type: none;
+  list-style-type: none;
 }
 button,
 input,
 textarea,
 select {
-    outline: none;
-    appearance: none;
+  outline: none;
+  appearance: none;
 }
 
 .pure-button {
-    border-radius: 4px;
+  border-radius: 4px;
 }
 
 .page {
-    margin: 20px 20px 50px;
+  margin: 20px 20px 50px;
 }
 
 .page-header {
-    margin-bottom: 30px;
-    position: sticky;
-    top: 1px;
-    background: #fff;
-    box-shadow: 1px 1px 5px #ddd;
+  margin-bottom: 30px;
+  position: sticky;
+  top: 1px;
+  background: #fff;
+  box-shadow: 1px 1px 5px #ddd;
 }
 
 .note-list {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .note-list .note-item {
-    margin-bottom: 20px;
-    overflow: wrap;
-    box-shadow: 1px 1px 5px #ddd;
-    padding: 20px;
-    border-radius: 5px;
-    font-size: 14px;
+  margin-bottom: 20px;
+  overflow: wrap;
+  box-shadow: 1px 1px 5px #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 14px;
 }
 
 .note-list .note-item .content {
-    margin-bottom: 10px;
-    word-break: break-all;
-    color: #333;
-    font-size: 16px;
-    line-height: 25px;
+  margin-bottom: 10px;
+  word-break: break-all;
+  color: #333;
+  font-size: 16px;
+  line-height: 25px;
 }
 .note-list .note-item .footer {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
 .note-list .note-item .date {
-    color: #666;
+  color: #666;
 }
 .note-list .note-item .actions {
-    font-size: 12px;
+  font-size: 12px;
 }
 .note-list .note-item .copy {
-    cursor: pointer;
-    color: #999;
+  cursor: pointer;
+  color: #999;
 }
 .note-list .note-item .delete {
-    cursor: pointer;
-    color: red;
-    margin-right: 5px;
+  cursor: pointer;
+  color: red;
+  margin-right: 5px;
 }
 .note-list .note-item .success {
-    color: green;
+  color: green;
 }
 .note-list .note-item:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .card-search {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-column-gap: 10px;
-    align-items: center;
-    color: #99a0aa;
-    font-size: 14px;
-    padding: 15px 10px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 10px;
+  align-items: center;
+  color: #99a0aa;
+  font-size: 14px;
+  padding: 15px 10px;
 }
 .card-search .form-group {
-    display: grid;
-    grid-template-columns: 1fr 150px;
+  display: grid;
+  grid-template-columns: 1fr 150px;
 }
 .card-search .form-group .form-keyword {
-    /*margin-bottom: 10px;*/
-    margin-right: 10px;
+  /*margin-bottom: 10px;*/
+  margin-right: 10px;
 }
 .card-search .form-group .form-action {
-    display: flex;
-    margin-left: 10px;
+  display: flex;
+  margin-left: 10px;
 }
 .card-search .form-group .form-input-group {
-    display: flex;
+  display: flex;
 }
 .card-search .form-group .form-action.group .pure-button {
-    flex: 0 1 50%;
+  flex: 0 1 50%;
 }
 .card-search .form-group .btn-reset {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 .card-search .form-group .btn-export {
-    width: 100%;
-    background: rgb(28, 184, 65);
-    color: #fff;
+  width: 100%;
+  background: rgb(28, 184, 65);
+  color: #fff;
 }
 
 .card-search .form-input {
-    border: none;
-    padding: 0 10px;
-    background: #f3f4f8;
-    width: 100%;
-    min-width: 50px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 14px;
-    border-radius: 5px;
+  border: none;
+  padding: 0 10px;
+  background: #f3f4f8;
+  width: 100%;
+  min-width: 50px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
 }
 .card-search .btn {
-    font-size: 14px;
-    min-width: 50px;
-    cursor: pointer;
-    border: none;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 5px;
+  font-size: 14px;
+  min-width: 50px;
+  cursor: pointer;
+  border: none;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
 }
 
 .card-search select {
-    color: #777;
+  color: #777;
 }
 
 .card-search select.active {
-    color: #333;
+  color: #333;
 }
 
 .load-more {
-    text-align: center;
-    margin: 15px 0;
-    display: none;
+  text-align: center;
+  margin: 15px 0;
+  display: none;
 }
 .load-more .btn {
-    padding: 5px 8px;
+  padding: 5px 8px;
 }
 
 .pagebar {
-    text-align: center;
-    display: none;
-    position: sticky;
-    bottom: 0;
-    background: #fff;
-    z-index: 100;
-    padding: 15px 0;
-    box-shadow: 1px 1px 5px #ddd;
+  text-align: center;
+  display: none;
+  position: sticky;
+  bottom: 0;
+  background: #fff;
+  z-index: 100;
+  padding: 15px 0;
+  box-shadow: 1px 1px 5px #ddd;
 }
 .pagebar .btn-page {
-    margin: 0 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 14px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
 }
 .pagebar span {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .pagebar .pure-button-disabled {
-    background: #e6e6e6;
-    color: rgba(0, 0, 0, 0.8);
+  background: #e6e6e6;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .search-result {
-    text-align: center;
-    margin: 50px 0;
-    font-size: 14px;
-    color: #666;
+  text-align: center;
+  margin: 50px 0;
+  font-size: 14px;
+  color: #666;
 }
 
 .controls {
-    position: fixed;
-    right: 0px;
-    bottom: 10px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 50%;
-    background: #eee;
-    font-size: 12px;
-    font-weight: bold;
-    cursor: pointer;
+  position: fixed;
+  right: 0px;
+  bottom: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #eee;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
-    .card-search {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .card-search .form-group {
-        margin-bottom: 15px;
-    }
-    .card-search .form-group:last-child {
-        margin-bottom: 0;
-    }
-    .card-search .form-group .form-input-group {
-        display: block;
-    }
-    .card-search .form-group .form-keyword {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
+  .card-search {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-search .form-group {
+    margin-bottom: 15px;
+  }
+  .card-search .form-group:last-child {
+    margin-bottom: 0;
+  }
+  .card-search .form-group .form-input-group {
+    display: block;
+  }
+  .card-search .form-group .form-keyword {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 350px) {
-    .card-search .form-group {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .card-search .form-group .form-action {
-        margin-left: 0;
-        margin-top: 15px;
-    }
-    .note-list .note-item .footer {
-        flex-direction: column;
-    }
-    .note-list .note-item .footer .actions {
-        margin: 5px 0;
-        text-align: right;
-    }
+  .card-search .form-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .card-search .form-group .form-action {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+  .note-list .note-item .footer {
+    flex-direction: column;
+  }
+  .note-list .note-item .footer .actions {
+    margin: 5px 0;
+    text-align: right;
+  }
 
-    .pagebar .btn-page {
-        width: 50px;
-        padding: 5px 10px;
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
+  .pagebar .btn-page {
+    width: 50px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
 }

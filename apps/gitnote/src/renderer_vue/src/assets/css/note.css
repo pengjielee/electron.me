@@ -1,130 +1,130 @@
 .note-list {
-    font-size: 16px;
+  font-size: 16px;
 }
 .note-list .item {
-    padding: 15px 0px;
-    cursor: pointer;
-    position: relative;
+  padding: 15px 0px;
+  cursor: pointer;
+  position: relative;
 }
 /*.note-list .item:last-child{
   border-bottom: none;
 }*/
 .note-list .page-header {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 .note-list .title {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 .note-list .content {
-    padding: 5px 100px 5px 0;
+  padding: 5px 100px 5px 0;
 }
 .note-list .date {
-    font-size: 14px;
-    color: #666;
+  font-size: 14px;
+  color: #666;
 }
 .note-list .action {
-    font-size: 14px;
-    margin: 5px 0;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+  font-size: 14px;
+  margin: 5px 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
 .note-list .action a {
-    margin-right: 10px;
-    color: blue;
+  margin-right: 10px;
+  color: blue;
 }
 .note-list .load-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
 }
 .note-list .load-more .btn {
-    width: 300px;
-    height: 40px;
-    font-size: 14px;
+  width: 300px;
+  height: 40px;
+  font-size: 14px;
 }
 .note-list .load-more .info {
-    font-size: 12px;
-    color: #666;
-    margin: 10px 0;
+  font-size: 12px;
+  color: #666;
+  margin: 10px 0;
 }
 .note-list .page-header {
-    border-bottom: 1px solid #ddd;
-    display: flex;
+  border-bottom: 1px solid #ddd;
+  display: flex;
 }
 .note-list .page-header .btn {
-    width: 100px;
-    height: 35px;
-    border-radius: 0;
-    font-size: 14px;
-    margin-top: 0;
+  width: 100px;
+  height: 35px;
+  border-radius: 0;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 .note-detail .title {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .note-detail .content {
-    font-size: 16px;
-    padding: 15px;
-    word-break: break-all;
-    background: #eff1f5;
-    margin: 10px 0;
+  font-size: 16px;
+  padding: 15px;
+  word-break: break-all;
+  background: #eff1f5;
+  margin: 10px 0;
 }
 .note-detail .date {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .note-header {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .note-edit {
-    font-size: 16px;
+  font-size: 16px;
 }
 .note-edit .btn {
-    width: 100%;
-    padding: 10px 0;
+  width: 100%;
+  padding: 10px 0;
 }
 
 .note-tags .tags .tag {
-    padding: 5px 10px;
-    margin: 0 15px 15px 0;
-    cursor: pointer;
+  padding: 5px 10px;
+  margin: 0 15px 15px 0;
+  cursor: pointer;
 }
 
 .note-images .media-left {
-    width: 150px;
+  width: 150px;
 }
 .note-images .media-object {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 .note-images .size {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 .note-images .action {
-    font-size: 12px;
+  font-size: 12px;
 }
 .note-images .action a {
-    margin-right: 10px;
-    color: blue;
-    cursor: pointer;
+  margin-right: 10px;
+  color: blue;
+  cursor: pointer;
 }
 
 .note-upload .uploader {
-    width: 100%;
-    height: 80px;
-    border: 1px dashed #d9d9d9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 40px;
-    color: #ddd;
-    margin-bottom: 10px;
+  width: 100%;
+  height: 80px;
+  border: 1px dashed #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #ddd;
+  margin-bottom: 10px;
 }
 .note-upload .uploader input[type='file'] {
-    display: none;
+  display: none;
 }

@@ -16,6 +16,6 @@ import '@/assets/css/note.css';
 window.localForage = require('localforage');
 
 new Vue({
-    router,
-    render: h => h(App),
+  router,
+  render: h => h(App),
 }).$mount('#app');

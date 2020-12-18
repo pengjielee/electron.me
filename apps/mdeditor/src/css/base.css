@@ -1,80 +1,81 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Hiragino Sans GB', '微软雅黑', 'Microsoft Yahei', Simsun, '宋体', Arial, Helvetica, sans-serif;
+  font-family: 'Hiragino Sans GB', '微软雅黑', 'Microsoft Yahei', Simsun, '宋体', Arial, Helvetica,
+    sans-serif;
 }
 html,
 body,
 .container {
-    height: 100%;
+  height: 100%;
 }
 textarea {
-    outline: none;
-    border: none;
-    font-size: 16px;
-    resize: none;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  resize: none;
 }
 
 .btn {
-    padding: 10px;
-    width: 100%;
-    height: 100%;
-    outline: none;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  outline: none;
 }
 .btn-primary {
-    background: #467fcf;
-    color: #fff;
-    border: 1px solid #467fcf;
+  background: #467fcf;
+  color: #fff;
+  border: 1px solid #467fcf;
 }
 .btn-primary[disabled='disabled'] {
-    background: #ddd;
-    color: #999;
+  background: #ddd;
+  color: #999;
 }
 .btn-secondary {
-    background: #5eba00;
-    color: #fff;
+  background: #5eba00;
+  color: #fff;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .container .main {
-    display: flex;
-    height: calc(100% - 50px);
+  display: flex;
+  height: calc(100% - 50px);
 }
 .container .content,
 .container .preview {
-    padding: 10px;
-    width: calc(50% - 2px);
-    height: 100%;
-    overflow: scroll;
+  padding: 10px;
+  width: calc(50% - 2px);
+  height: 100%;
+  overflow: scroll;
 }
 .container .spliter {
-    width: 4px;
-    background: #ddd;
-    cursor: pointer;
+  width: 4px;
+  background: #ddd;
+  cursor: pointer;
 }
 .container .content {
-    line-height: 25px;
+  line-height: 25px;
 }
 .container .preview {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .footer {
-    position: fixed;
-    bottom: 5px;
-    right: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
+  position: fixed;
+  bottom: 5px;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
 }
 .footer .btn {
-    font-size: 16px;
-    border: none;
+  font-size: 16px;
+  border: none;
 }

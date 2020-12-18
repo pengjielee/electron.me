@@ -5,8 +5,8 @@
 // selectively enable features needed in the rendering
 // process.
 
-window.onload = function(){
-	document.getElementById('#app').onclick = function(){
-		alert('hello');
-	}
-}
+window.onload = function () {
+  document.getElementById('#app').onclick = function () {
+    alert('hello');
+  };
+};

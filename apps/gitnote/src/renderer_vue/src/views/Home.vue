@@ -1,7 +1,7 @@
 <template>
-    <div class="page page-home">
-        <Welcome />
-    </div>
+  <div class="page page-home">
+    <Welcome />
+  </div>
 </template>
 
 <script>
@@ -9,9 +9,9 @@
 import Welcome from '@/components/Welcome.vue';
 
 export default {
-    name: 'home',
-    components: {
-        Welcome,
-    },
+  name: 'home',
+  components: {
+    Welcome,
+  },
 };
 </script>

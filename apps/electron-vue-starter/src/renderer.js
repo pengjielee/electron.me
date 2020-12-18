@@ -5,12 +5,12 @@
 // selectively enable features needed in the rendering
 // process.
 
-const Home = require("./pages/home.js");
-const About = require("./pages/about.js");
+const Home = require('./pages/home.js');
+const About = require('./pages/about.js');
 
 const routes = [
-  { path: "/", component: Home, },
-  { path: "/about", component: About }
+  { path: '/', component: Home },
+  { path: '/about', component: About },
 ];
 
 const router = new VueRouter({
@@ -18,9 +18,9 @@ const router = new VueRouter({
 });
 
 const app = new Vue({
-  el: "#app",
+  el: '#app',
   router,
   data: {
-    message: "Hello Vue!",
+    message: 'Hello Vue!',
   },
 });
